@@ -4,7 +4,7 @@ import Banner from "./components/Banner";
 import Image from "next/image";
 import LittleCircle from "./components/LittleCircle";
 import Aos from "aos";
-// import "aos/dist/aos.css";
+import "aos/dist/aos.css";
 
 import { useEffect } from "react";
 import HorizScrollSection from "./components/HorizScrollSection";
