@@ -24,6 +24,7 @@ export default function HorizScrollSection() {
                     <li>Get nrrd files of the mouse brain from Allen SDK</li>
                     <li>Use package “pynrrd” to transfer nrrd to numpy arrays</li>
                     <li>Generate obj files that can be used in Unity with the numpy arrays</li>
+                    <li>Have a human brain model thats color coded by region</li>
                 </ul>
             </div>
 
