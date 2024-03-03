@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 
 export default function HorizScrollSection() {
@@ -13,10 +14,11 @@ export default function HorizScrollSection() {
                 </ul>
             </div>
 
-
+            
             <div class="bg-slate-300 rounded-md px-4 py-4">
                 <h1>Making a More Robust Model</h1>
-                <p class="text-wrap ml-4">Due to time constraints, we weren't able to make our 3D model as robust as we would've hoped!</p>
+                
+                <p class="text-wrap ml-4">Due to time constraints, we weren't able to make our 3D model as robust as we would`ve hoped!</p>
             </div>
 
 
