@@ -41,6 +41,12 @@ export default function Home() {
 
               <h3 class="mr-0 pt-2">What ?</h3>
               <p class="text-xl font-mono pb-2">We created <span class="font-semibold">Brain Voyager</span>, a way to view data visualizations in a 3D space.</p>
+              <p class="mr-8">We have made 3 data visualizations: </p>
+              <ul class="list-disc ml-8">
+                <li>Loose Representation of the Brain (Allen Dataset)</li>
+                <li>Live Updating Bar Graphs (SynapTech Data)</li>
+                <li>Brain Representation</li>
+              </ul>
               <h3>Why ?</h3>
               <p class="text-xl font-mono pb-2">To encourage data literacy by providing an engaging medium to view and understand important data.</p>
             </div>
@@ -54,7 +60,7 @@ export default function Home() {
         <div id="dataset " class="grid grid-cols-2 gap-4 border-b-2">
           <div class="border-r-2">
 
-          <h2 class="text-3xl p-8">Context on dataset</h2>
+          <h2 class="text-3xl p-8">Context on the allen dataset</h2>
 
           <p class="px-8 leading-9">The <span> Allen Mouse Brain Connectivity Atlas</span> provides comprehensive information about 
             the connectivity patterns of neural circuits in the mouse brain. This dataset includes 
@@ -89,7 +95,7 @@ export default function Home() {
               <div id="timeline" class=" flex flex-col w-auto pb-10">
                 <div id="dataset" class="text-left">
                   <h2>Selecting a dataset</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <p>We chose the Allen Mouse Brain Connectivity because we were the most interested in looking at how brain connectivity works!</p>
                 </div>
               </div>
           </div>
@@ -100,7 +106,9 @@ export default function Home() {
           <div class="flex flex-col ml-20 px-4 pb-10 w-5/6 border-l-2">
           <div id="preprocess" class="text-left">
             <h2>Preprocessing Data</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <p>We followed sample code from Allen SDK to get all the relevant data. </p>
+          
           </div>
           </div>
 
@@ -109,8 +117,10 @@ export default function Home() {
           </div>
           <div class="flex flex-col ml-20 px-4 pb-10  w-5/6 border-l-2">
           <div id="preprocess" class="text-left">
-            <h2>Creating the 3D Model</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h2>Model Creation </h2>
+            <p>From the data we extracted in our processing, we used the x, y, and z coordinates to create a 3D model of corresponding squares, which is a loose representation of the brain.</p>
+            <p>For our second visualizations, live brain data updating, we created around 40 bargraphs at different instants of time to string together in an animation.</p>
+          
           </div>
           </div>
 
@@ -120,20 +130,11 @@ export default function Home() {
           <div class="flex flex-col ml-20 px-4 pb-10  w-5/6 border-l-2">
           <div id="preprocess" class="text-left">
             <h2>Creating the Visualization</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>To create the actual visualization, we imported our models into Unity.</p>
           </div>
           </div>
 
-          <div id="littlecircle">
-          <LittleCircle />
-          </div>
-          <div class="flex flex-col ml-20 px-4 pb-2  w-5/6 border-l-2">
-          <div id="preprocess" class="text-left">
-            <h2>Deployment</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        
-          </div>
-          </div>
+         
 
         </div>
 
