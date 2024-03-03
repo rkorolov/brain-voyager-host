@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+p {
+    
+    font-family: monospace;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+span {
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.875rem; /* 30px */
+    line-height: 2.25rem; /* 36px */
+}
+
+#littlecircle {
+    margin-left: 4.30rem;
+}
+
+#littlecircle2 {
+    margin-left: 3;
+}
+
+li {
+  font-family: monospace;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+
