@@ -27,7 +27,7 @@ export default function Home() {
           <div id="image" class=" bg-slate-700 border-2 border-slate-100  hover:shadow-lg hover:shadow-slate-300 rounded-full hover:animate-spin">
             <Image
               src="/vrLogo.png"
-              width={500}
+              width={600}
               height={400} 
               alt="transparent img"
             />
@@ -179,6 +179,7 @@ export default function Home() {
             <li>F3D</li>
             <li>Blender</li>
             <li>Unity</li>
+            <li>GPU Programming</li>
           </ul>
           </div>
 
