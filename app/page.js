@@ -9,6 +9,11 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import HorizScrollSection from "./components/HorizScrollSection";
 
+ 
+import React, { Component } from 'react'; 
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
+import { Carousel } from 'react-responsive-carousel'; 
+
 
 export default function Home() {
 
@@ -118,9 +123,9 @@ export default function Home() {
           <div class="flex flex-col ml-20 px-4 pb-10  w-5/6 border-l-2">
           <div id="preprocess" class="text-left">
             <h2>Model Creation </h2>
-            <p>From the data we extracted in our processing, we used the x, y, and z coordinates to create a 3D model of corresponding squares, which is a loose representation of the brain.</p>
+            <p>From the data we extracted in our processing, we used the x, y, and z coordinates to create a 3D model of corresponding squares, which is a loose representation of the brain. We generated obj files based on regions of brain as well as Shader files for colors of each region.</p>
             <p>For our second visualizations, live brain data updating, we created around 40 bargraphs at different instants of time to string together in an animation.</p>
-          
+            
           </div>
           </div>
 
@@ -160,7 +165,7 @@ export default function Home() {
         </div>
 
         <h1 class="text-6xl px-8 py-4" data-aos="fade-up">Skills Learned / Used / Practiced</h1>
-        <div id="skillsUsed"class="flex flex-row px-8 gap-x-4" data-aos="fade-up">
+        <div id="skillsUsed"class="flex flex-row px-8 gap-x-4 border-b-2" data-aos="fade-up">
 
           
           <div class="flex flex-col px-8">
@@ -216,7 +221,70 @@ export default function Home() {
 
         </div>
 
-        <div id="Website Info">
+        <div id="Code Snippets" class="mx-auto text-center py-4 w-1/3 h-auto " data-aos="fade-up">
+          <h1 class="text-6xl py-4">Photo Gallley</h1>
+          
+          <Carousel class="w-2/3 ">
+            
+
+            <div>
+            <Image 
+                src="/model.png"
+                width={300}
+                height={300}
+                alt="graphic"
+              />
+              <p class="legend">Inspo for the more Robust Model</p>
+            </div>
+
+            <div>
+            <Image 
+                src="/cubes.png"
+                width={300}
+                height={300}
+                alt="graphic"
+              />
+              <p class="legend">Loose Representation of the Brain</p>
+            </div>
+
+            <div>
+            <Image 
+                src="/humanBrain.png"
+                width={400}
+                height={400}
+                alt="graphic"
+              />
+              <p class="legend">In the future we hope to maken a 3D model of a color-coded (by section) human brain!</p>
+            </div>
+
+            <div>
+            <Image 
+                src="/spikyrainbow.png"
+                width={400}
+                height={400}
+                alt="graphic"
+              />
+              <p class="legend">Process Photo - trying to get one consistent face.</p>
+            </div>
+
+            <div>
+            <Image 
+                src="/lessSpiky.png"
+                width={400}
+                height={400}
+                alt="graphic"
+              />
+              <p class="legend">Process Photo - trying to get one consistent face part 2!</p>
+            </div>
+
+
+
+
+          </Carousel>
+
+          
+
+
 
         </div>
 

@@ -18,7 +18,13 @@ export default function HorizScrollSection() {
             <div class="bg-slate-300 rounded-md px-4 py-4">
                 <h1>Making a More Robust Model</h1>
                 
-                <p class="text-wrap ml-4">Due to time constraints, we weren't able to make our 3D model as robust as we would`ve hoped!</p>
+                <p class="text-wrap ml-4">Due to time constraints, we weren't able to make our mouse brain 3D model as robust as we would`ve hoped!</p>
+                <p class="text-wrap ml-4">Specifically we hope to: </p>
+                <ul class="list-disc ml-16">
+                    <li>Get nrrd files of the mouse brain from Allen SDK</li>
+                    <li>Use package “pynrrd” to transfer nrrd to numpy arrays</li>
+                    <li>Generate obj files that can be used in Unity with the numpy arrays</li>
+                </ul>
             </div>
 
 
