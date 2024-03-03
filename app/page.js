@@ -221,10 +221,10 @@ export default function Home() {
 
         </div>
 
-        <div id="Code Snippets" class="mx-auto text-center py-4 w-1/3 h-auto " data-aos="fade-up">
+        <div id="Code Snippets" class="mx-auto text-center py-4 w-1/3 h-2/3 " data-aos="fade-up">
           <h1 class="text-6xl py-4">Photo Gallley</h1>
           
-          <Carousel class="w-2/3 ">
+          <Carousel class="w-2/3">
             
 
             <div>
